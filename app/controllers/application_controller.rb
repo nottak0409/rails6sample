@@ -1,10 +1,8 @@
 class ApplicationController < ActionController::Base
     layout :set_layout
 
-    class Forbidden < ActionController::ActionControllerError
-    end
-    class IpAddressRejected < ActionController::ActionControllerError
-    end
+    class Forbidden < ActionController::ActionControllerError; end
+    class IpAddressRejected < ActionController::ActionControllerError; end
 
     rescue_from StandardError, with: :rescue500
     rescue_from Forbidden, with: :rescue403
