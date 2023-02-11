@@ -8,7 +8,7 @@ class CreateCustomers < ActiveRecord::Migration[6.0]
       t.string :family_name_kana, null: false # 姓（カナ）
       t.string :given_name_kana, null: false # 名(カナ)
       t.string :gender # 性別
-      t.date :birth_date # 誕生日
+      t.date :birth_day # 誕生日
       t.string :hashed_password # パスワード
       t.timestamps
     end

@@ -47,7 +47,7 @@ ActiveRecord::Schema.define(version: 2023_02_11_044635) do
     t.string "family_name_kana", null: false
     t.string "given_name_kana", null: false
     t.string "gender"
-    t.date "birth_date"
+    t.date "birth_day"
     t.string "hashed_password"
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
