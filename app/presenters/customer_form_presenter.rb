@@ -1,4 +1,4 @@
-class CustomerFOrmPresenter < UserFormPresenter
+class CustomerFormPresenter < UserFormPresenter
     def gender_field_block
         markup(:div, class: "radio-buttons") do |m|
             m << decorated_label(:gender, "性別")
