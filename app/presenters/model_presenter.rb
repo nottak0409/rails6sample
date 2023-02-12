@@ -13,7 +13,7 @@ class ModelPresenter
         object.created_at.try(:strftime, "%Y-%m-%d %H:%M:%S")
     end
 
-    def udpated_at
-        object.udpated_at.try(:strftime, "%Y-%m-%d %H:%M:%S")
+    def updated_at
+        object.updated_at.try(:strftime, "%Y-%m-%d %H:%M:%S")
     end
 end
