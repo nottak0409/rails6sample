@@ -1,8 +1,4 @@
 class HomeAddress < Address
-    before_validation do
-        self.company_name = normalize_as_name(company_name)
-        self.division_name = normalize_as_name(division_name)
-    end
-
-    validates :company_name, presence: true
+    validates :postal_code, :prefecture, :city, :address1, presence: true
+    validates :company_name, :division_name, absence: true
 end

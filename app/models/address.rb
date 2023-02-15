@@ -1,5 +1,5 @@
 class Address < ApplicationRecord
-    inclide StringNormalize
+    include StringNormalizer
 
     belongs_to :customer
 
